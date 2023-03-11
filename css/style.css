@@ -1,0 +1,552 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: all 0.2s linear;
+  font-family: "Montserrat", sans-serif;
+  /* font-weight: 500; */
+  color: var(--text-color);
+}
+body {
+  background: var(--primary-color);
+  color: var(--text-color);
+  top: 0;
+}
+:root {
+  --orange: #ffa500;
+  --primary-color: #edf2fc;
+  --card-color: ;
+  --h3-color: #333;
+}
+
+.dark-theme {
+  --primary-color: #000000;
+  --secondary-color: #fff;
+  --card-color: #333;
+  --text-color: white;
+  --h3-color: #eee;
+}
+*::selection {
+  background-color: var(--orange);
+  color: aliceblue;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 6rem;
+  scroll-behavior: smooth;
+}
+section,
+.review,
+.brand-container {
+  padding: 2rem 9%;
+}
+.review {
+  padding: 2rem 9%;
+}
+.heading {
+  text-align: center;
+  padding: 2.5rem 0px;
+}
+.heading span {
+  font-size: 3.5rem;
+  background-color: rgba(255, 165, 0, 0.2);
+  color: var(--orange);
+  border-radius: 0.5rem;
+  padding: 0.2rem 1rem;
+  display: inline-block;
+}
+.heading .space {
+  background-color: transparent;
+}
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: var(--orange);
+  color: #fff;
+  padding: 0.8rem 3rem;
+  border: 0.2rem solid var(--orange);
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+.btn:hover {
+  background-color: rgba(255, 165, 0, 0.2);
+  color: var(--orange);
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgb(61, 162, 245);
+  z-index: 11;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  padding: 0.8rem 9%;
+  color: var(--text-color);
+}
+header .logo img {
+  width: 50px;
+}
+header .logo span {
+  color: var(--orange);
+}
+header .navbar a {
+  color: white;
+  font-size: 2rem;
+  margin: 0 0.8rem;
+}
+header .navbar a:hover {
+  color: var(--orange);
+}
+header .flags img {
+  width: 30px;
+  height: 15px;
+  margin-left: 8px;
+}
+header #icon {
+  width: 30px;
+  cursor: pointer;
+  padding: 5px;
+}
+header #icon:hover {
+  background: rgb(126, 186, 235);
+  border-radius: 30px;
+}
+
+.menu-bar {
+  width: 5rem;
+  border: 1px solid #fff;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.2rem;
+  cursor: pointer;
+  display: none;
+}
+/* ============================== flags =-========== */
+.flags {
+  display: flex;
+  align-items: center;
+}
+.flags img {
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+/* ================== home section ====================== */
+
+.swiper {
+  position: relative;
+  height: 500px;
+  max-width: 1100px;
+  margin-top: 68px;
+}
+.swiper .swiper-slide img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* ======================================= services ====================== */
+.services .box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.services .box-container .box {
+  flex: 1 1 30rem;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  text-align: center;
+  background: var(--card-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+}
+.services .box-container .about-text {
+  text-transform: initial;
+  font-size: 20px;
+  max-width: 600px;
+}
+.services .box-container .about-img {
+  padding: 1rem 0px;
+  width: 400px;
+}
+
+.services .box-container .box:hover {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+}
+/* ================================== gallery ======================== */
+.gallery .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.gallery .box-container .box {
+  overflow: hidden;
+  box-shadow: 0 1rem 2rem rgba(29, 28, 28, 0.1);
+  border: 1px solid #fff;
+  border-radius: 0.5rem;
+  height: 25rem;
+  flex: 1 1 30rem;
+  position: relative;
+}
+.gallery .box-container .box img:not(.yetmish-yedi) {
+  max-height: 80%;
+  max-width: 80%;
+  display: inline-block;
+  position: absolute;
+  top: 12%;
+  left: 33%;
+  margin: 0 auto;
+}
+.gallery .box-container .box img.yetmish-yedi {
+  position: absolute;
+  top: 20%;
+  left: 15%;
+}
+.gallery .box-container .box img.ajika {
+  left: 28%;
+}
+
+.gallery .box-container .box:first-child img.yetmish-yedi {
+  position: absolute;
+  top: 35%;
+  left: 15%;
+}
+.gallery .box-container .box img.dippo {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+.gallery .box-container .box img.left {
+  position: absolute;
+  left: 18%;
+}
+.gallery .box-container .box .content {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 2rem;
+  padding-top: 5rem;
+}
+.gallery .box-container .box .content a {
+  margin-top: 60px;
+}
+
+.gallery .box-container .box:hover .content {
+  top: 0;
+  transform: scale(1.05);
+}
+.gallery .box-container .box:hover,
+.gallery .box-container .transform:hover {
+  transform: scale(1.05);
+}
+.gallery .box-container .box .content h3 {
+  font-size: 2.5rem;
+  color: var(--orange);
+}
+.gallery .box-container .box .content p {
+  font-size: 1.5rem;
+  color: #eee;
+  padding: 0.5rem 0px;
+}
+.gallery .box-container .box .yetmish-yedi {
+  width: 250px;
+}
+.gallery .brand-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.gallery .brand-logo img {
+  width: 200px;
+}
+.gallery .brand-logo .hleks {
+  width: 200px;
+  height: 100px;
+}
+.gallery .box-container .box img.small {
+  position: absolute;
+  top: 25%;
+  left: 34%;
+  height: 60%;
+}
+/* =================================== review ===================== */
+.review .box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.review .box-container .box {
+  flex: 1 1 30rem;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  text-align: center;
+  background: var(--card-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+}
+.review .box-container .about-text {
+  text-transform: initial;
+  font-size: 20px;
+  max-width: 600px;
+}
+
+/* ====================== brands ================ */
+.brand-container .brand-slider .swiper-slide img {
+  width: 10rem;
+  /* background-color: #333; */
+}
+.brand-container {
+  text-align: center;
+  margin: 20px 0px 0 30px;
+}
+.brand-container .container {
+  max-width: 1300px;
+}
+.brand-slider {
+  align-items: center;
+  max-width: 1300px;
+  margin: 20px 0px;
+}
+.brand-slider .swiper-wrapper {
+  display: flex;
+  align-items: center;
+}
+/* ============================== footer =================== */
+.footer {
+  background: rgb(61, 162, 245);
+  border-radius: 5% 5% 0 0;
+}
+.footer .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.footer .box-container .box {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  padding: 10px;
+}
+.footer .box-container .box:hover {
+  background: rgb(16, 129, 221);
+  border-radius: 10%;
+}
+
+.footer .box-container .box h3 {
+  font-size: 2.5rem;
+  padding: 0.7rem 0px;
+  color: #fff;
+}
+.footer .box-container .box p {
+  font-size: 2rem;
+  padding: 0.7rem 0px;
+  color: #eee;
+}
+.footer .box-container .box a {
+  font-size: 2rem;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+}
+.footer .box-container .box img {
+  margin-right: 10px;
+}
+.footer .box-container .box a:hover {
+  color: var(--orange);
+  text-decoration: underline;
+}
+
+/* ============================== media quaries ========================== */
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media screen and (max-width: 991px) {
+  header {
+    padding: 2rem;
+  }
+  section {
+    padding: 2rem;
+  }
+  .swiper {
+    height: 450px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .menu-bar {
+    display: initial;
+  }
+  header .navbar {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    background: rgb(61, 162, 245);
+
+    border-top: 0.1rem solid rgba(255, 255, 255, 0.2);
+    padding: 1rem 2rem;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  header .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  header .navbar a {
+    display: block;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin: 1.5rem 0px;
+    background: rgb(10, 101, 175);
+  }
+  .box-container {
+    display: block;
+  }
+  .footer .box-container .box {
+    display: block;
+    width: 100%;
+  }
+  .swiper {
+    height: 450px;
+  }
+  .gallery .box-container .box:last-child img {
+    max-height: 80%;
+    max-width: 80%;
+    display: inline-block;
+    position: absolute;
+    top: 20%;
+    left: 38%;
+  }
+  .gallery .box-container .box img.yetmish-yedi {
+    position: absolute;
+    top: 20%;
+    left: 8%;
+  }
+  .gallery .box-container .box:last-child img.yetmish-yedi {
+    position: absolute;
+    top: 20%;
+    left: 28%;
+  }
+  .gallery .box-container .box:first-child img.yetmish-yedi {
+    position: absolute;
+    left: 5%;
+  }
+  .gallery .box-container .box:last-child img.dippo {
+    position: absolute;
+    top: 10%;
+    left: 28%;
+  }
+  .gallery .box-container .box:last-child img.last {
+    position: absolute;
+    top: 10%;
+  }
+}
+@media screen and (max-width: 550px) {
+  html {
+    font-size: 50%;
+  }
+  .services .box-container .about-text {
+    font-size: 16px;
+  }
+  .heading span {
+    font-size: 2.5rem;
+  }
+  .footer .box-container {
+    display: block;
+    width: 100%;
+  }
+  .footer .box-container .box {
+    display: block;
+    width: 100%;
+  }
+  .footer .box-container .box a {
+    display: block;
+    font-size: 16px;
+  }
+
+  .swiper {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin-top: 82px;
+  }
+
+  .gallery .box-container .box img:not(.yetmish-yedi) {
+    max-height: 80%;
+    max-width: 80%;
+    position: absolute;
+    top: 12%;
+    left: 35%;
+  }
+  .gallery .box-container .box img.yetmish-yedi {
+    position: absolute;
+    top: 20%;
+    left: 22%;
+  }
+
+  .gallery .box-container .box img.dippo {
+    position: absolute;
+    top: 8%;
+    left: 25%;
+  }
+  .gallery .box-container .box img.small {
+    position: absolute;
+    top: 30%;
+    left: 38%;
+  }
+  .gallery .box-container .box img.shan {
+    position: absolute;
+    left: 40%;
+  }
+  .gallery .box-container .box:nth-child(5) img.hleks {
+    position: absolute;
+    left: 33%;
+  }
+  .gallery .box-container .box:last-child img.yetmish-yedi {
+    position: absolute;
+    left: 22%;
+  }
+  .gallery .box-container .box:first-child img.yetmish-yedi {
+    position: absolute;
+    left: 22%;
+  }
+  .gallery .box-container .box:nth-child(2) img.yetmish-yedi,
+  .gallery .box-container .box:nth-child(3) img.yetmish-yedi {
+    position: absolute;
+    top: 6%;
+  }
+  .gallery .box-container .box:nth-child(1) img.dippo,
+  .gallery .box-container .box:nth-child(3) img.dippo,
+  .gallery .box-container .box:nth-child(4) img.dippo {
+    position: absolute;
+    top: 10%;
+    left: 18%;
+  }
+}
+.main-container {
+  max-width: 1400px !important;
+  margin: 0 auto;
+}
