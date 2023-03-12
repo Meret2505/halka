@@ -84,6 +84,7 @@ header {
   align-items: center;
   padding: 0.8rem 9%;
   color: var(--text-color);
+  height:60px;
 }
 header .logo img {
   width: 50px;
@@ -402,7 +403,7 @@ header #icon:hover {
     transition: all 0.3s ease-in-out; 
   }
   header .navbar.active {
-    top:8%;
+    top:60px;
     z-index:9;
   }
   header .navbar a {
