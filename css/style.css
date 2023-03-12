@@ -402,7 +402,7 @@ header #icon:hover {
     transition: all 0.3s ease-in-out; 
   }
   header .navbar.active {
-    top:10%;
+    top:8%;
     z-index:9;
   }
   header .navbar a {
