@@ -4,16 +4,16 @@ let navBar = document.querySelector('.navbar')
 
 window.onscroll = () => {
     navBar.classList.remove('active');
-    menu.src = "../images/fontisto-master/fontisto-master/icons/png/interfaces/nav-icon-a(white).jpg";
+    menu.src = "../fontisto-master/fontisto-master/icons/png/interfaces/nav-icon-a(white).jpg";
 }
 // =============================== burger ================================
 menu.onclick = function () {
     navBar.classList.toggle('active');
     if (navBar.classList.contains('active')) {
-        menu.src = "../images/fontisto-master/fontisto-master/icons/png/interfaces/close-a(white).jpg"
+        menu.src = "../fontisto-master/fontisto-master/icons/png/interfaces/close-a(white).jpg"
 
     } else {
-        menu.src = "../images/fontisto-master/fontisto-master/icons/png/interfaces/nav-icon-a(white).jpg"
+        menu.src = "../fontisto-master/fontisto-master/icons/png/interfaces/nav-icon-a(white).jpg"
     }
 };
 const slider = new Swiper('.swiper', {
@@ -76,10 +76,10 @@ var icon = document.getElementById("icon");
 icon.onclick = function () {
     document.body.classList.toggle("dark-theme");
     if (document.body.classList.contains("dark-theme")) {
-        icon.src = "../images/fontisto-master/fontisto-master/icons/png/weather/day-sunny(white).jpg"
+        icon.src = "../fontisto-master/fontisto-master/icons/png/weather/day-sunny(white).jpg"
     } else {
 
-        icon.src = "../images/fontisto-master/fontisto-master/icons/png/weather/night-clear.jpg"
+        icon.src = "../fontisto-master/fontisto-master/icons/png/weather/night-clear.jpg"
     }
 }
 var arrLang = {
