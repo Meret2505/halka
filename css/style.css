@@ -402,6 +402,7 @@ header #icon:hover {
   }
   header .navbar.active {
     top:10%;
+    z-index:9;
   }
   header .navbar a {
     display: block;
