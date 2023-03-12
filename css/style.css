@@ -15,7 +15,7 @@
 body {
   background: var(--primary-color);
   color: var(--text-color);
-  overflow-x: hidden;
+  
 }
 :root {
   --orange: #ffa500;
@@ -37,6 +37,7 @@ html {
   font-size: 62.5%;
   scroll-padding-top: 6rem;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 section,
 .review,
@@ -305,7 +306,6 @@ header #icon:hover {
 /* ====================== brands ================ */
 .brand-container .brand-slider .swiper-slide img {
   width: 10rem;
-  /* background-color: #333; */
 }
 .brand-container {
   text-align: center;
@@ -392,17 +392,16 @@ header #icon:hover {
   }
   header .navbar {
     position: absolute;
-    top: 100%;
+    top: -100%;
     right: 0;
     left: 0;
     background: rgb(61, 162, 245);
-
     border-top: 0.1rem solid rgba(255, 255, 255, 0.2);
     padding: 1rem 2rem;
-    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: all 0.3s ease-in-out; 
   }
   header .navbar.active {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    top:10%;
   }
   header .navbar a {
     display: block;
